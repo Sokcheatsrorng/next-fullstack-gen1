@@ -6,6 +6,8 @@ import type { Metadata, ResolvingMetadata } from "next"
 type Props = {
   params: Promise<{ id: string }>
 }
+const hello = "hello";
+console.log(hello);
 
 const BASE_URL = "https://car-nextjs-api.cheatdev.online/cars"
 
