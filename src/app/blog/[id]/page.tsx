@@ -1,9 +1,14 @@
 
 import BlogComponent from "@/components/BlogComponent";
+import { Metadata, ResolvingMetadata } from "next";
 
 
+// define type 
+type Props = {
+    params: Promise<{id:number}>
+}
 
- 
+
 const BASE_URL = "https://jsonplaceholder.typicode.com/posts";
 // fetchData
 async function fetchData(params:number){
@@ -13,11 +18,35 @@ async function fetchData(params:number){
     return dataRes;
 }
 
+
+// generateMetadata
+export async function generateMetadata(
+    {params}:Props, 
+    parent: ResolvingMetadata
+): Promise<Metadata>{
+
+    const {id} = await params;
+
+    // fetchData 
+    const product = await fetchData(id);
+
+    const previousImages = (await parent).openGraph?.images || []; 
+
+    return {
+        title: product?.title,
+        openGraph:{
+            images: ['../../../public/static-photo/red-car.png', ...previousImages]
+        }
+    }
+
+
+    
+}
+
+
 export default async function Page({
     params
-}:{
-   params:Promise<{id:number}>
-}){
+}:Props){
     const post = await fetchData((await params).id);
     return (
       <BlogComponent 

@@ -22,8 +22,6 @@ export const metadata:Metadata ={
     description:"this is blog page"
 }
 
-
-
 export default async function BlogPage(){
    
     // const res = await fetch(BASE_URL);
