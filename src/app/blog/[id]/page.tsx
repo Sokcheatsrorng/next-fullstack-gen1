@@ -18,7 +18,6 @@ async function fetchData(params:number){
     return dataRes;
 }
 
-
 // generateMetadata
 export async function generateMetadata(
     {params}:Props, 
@@ -32,15 +31,14 @@ export async function generateMetadata(
 
     const previousImages = (await parent).openGraph?.images || []; 
 
+    const trimeTitle = product?.title;
+
     return {
-        title: product?.title,
+        title: trimeTitle,
         openGraph:{
             images: ['../../../public/static-photo/red-car.png', ...previousImages]
         }
     }
-
-
-    
 }
 
 

@@ -5,6 +5,8 @@ import "../globals.css"
 import StyledComponentsRegistry from "@/lib/registry"
 import BlogListSkeleton from "@/components/Skeleton/BlogSkeleton"
 
+
+
 export default function BlogLayout(
     {children}:{children: React.ReactNode}
 ){
