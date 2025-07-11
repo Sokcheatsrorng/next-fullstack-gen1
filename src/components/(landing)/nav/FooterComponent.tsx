@@ -82,7 +82,8 @@ const FooterComponent = ({
      const pathName = usePathname();
         if(pathName == '/auth/login' || 
             pathName == '/auth/signup' ||
-           pathName.startsWith('/dashboard')
+           pathName.startsWith('/dashboard') || 
+           pathName === '/blog'
         ){
             return null;
         }

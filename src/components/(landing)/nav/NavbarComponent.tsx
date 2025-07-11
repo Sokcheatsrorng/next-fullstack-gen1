@@ -40,7 +40,7 @@ const NavbarComponent = ({
     },
     {
       title: "Blog",
-      url: "#",
+      url: "/blog",
     },
   ],
   auth = {
@@ -63,7 +63,8 @@ const NavbarComponent = ({
 
   if(pathName === '/login' || 
     pathName === '/signup' ||
-    pathName.startsWith('/dashboard')
+    pathName.startsWith('/dashboard') ||
+    pathName === '/blog'
   ) {
     return null;
   }
