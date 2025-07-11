@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     openGraph: {
       title: carTitle,
       description: carDescription,
-      images: [car.imageUrl || "/placeholder.svg?height=400&width=600", ...previousImages],
+      images: [car.image || "/placeholder.svg?height=400&width=600", ...previousImages],
       type: "article",
     },
     twitter: {
       card: "summary_large_image",
       title: carTitle,
       description: carDescription,
-      images: [car.imageUrl || "/placeholder.svg?height=400&width=600"],
+      images: [car.image || "/placeholder.svg?height=400&width=600"],
     },
   }
 }
