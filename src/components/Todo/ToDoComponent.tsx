@@ -21,7 +21,7 @@ export function ToDoComponent() {
     useEffect(
         ()=>{
             async function fetchData() {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_JSONPLACEHOLDER_BASE_URL}/todos`);
+                const res = await fetch(`https://jsonplaceholder.typicode.com/todos`);
                 const data = await res.json();
                 console.log("This is data", data);
                 setTodo(data);
