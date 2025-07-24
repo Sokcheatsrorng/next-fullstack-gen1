@@ -7,6 +7,7 @@ import { FooterComponent } from "@/components/(landing)/nav/FooterComponent";
 import React from "react";
 
 import { NavbarComponent } from "@/components/(landing)/nav/NavbarComponent";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   // title: "Car Selling",
@@ -63,7 +64,7 @@ export default function RootLayout({
       <body
       >
         <NavbarComponent/>
-        
+        <GoogleAnalytics gaId={"G-DKBDJNN83E"}/>
         {children}
         {modal}
         {/* <h1 lang="km">សួស្តី</h1> */}

@@ -3,6 +3,7 @@
 import { CarouselDApiDemo } from "@/components/(landing)/carousel/CarouselComponent";
 import { MarqueeDemo } from "@/components/(landing)/testimonial/TestimonialComponent";
 import { HeroVideoDialogDemo } from "@/components/(landing)/VideoComponent/VideoComponent";
+import { EventButtonToGoogleAnalytics } from "@/components/TrackingWithGoogleAnalytic";
 // import { LinkComponent } from "@/components/ProfileComponent/ProfileComponent";
 
 
@@ -19,6 +20,7 @@ export default function Home() {
        <MarqueeDemo/>
        {/* video  */}
        <HeroVideoDialogDemo/>
+       <EventButtonToGoogleAnalytics/>
 
        {/* <Link href="/todo">Navigate to Todo</Link> */}
 {/* 

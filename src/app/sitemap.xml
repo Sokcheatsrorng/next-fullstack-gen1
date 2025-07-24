@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/product</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/blog</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/signup</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/blog/5904c093-3012-42d9-914d-d18348598c43</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/blog/3dfa362e-f753-4f57-881e-0c7e032c23a8</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://next-fullstack-gen1.vercel.app/blog/2bfc34f1-3e0c-4232-9d68-b0118fe34d7c</loc>
+  <lastmod>2025-07-11T09:09:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
